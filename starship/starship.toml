@@ -1,0 +1,68 @@
+add_newline = false
+
+[character]
+success_symbol = '[✔](bold green)'
+error_symbol = '[✘](bold red)'
+
+[conda]
+format = ' \[[$symbol$environment]($style)\]'
+ignore_base = false
+symbol = " "
+style = 'bold yellow'
+
+[cmd_duration]
+format = ' \[[⏱ $duration]($style)\]'
+
+# [battery]
+# full_symbol = '🔋 '
+# charging_symbol = '⚡️ '
+# discharging_symbol = '💀 '
+#format = '\[[$symbol$percentage]($style)\]'
+
+# [[battery.display]]
+# threshold = 100
+# style = 'bold yellow'
+
+[time]
+disabled = false
+# Hour:Minute Format
+time_format = "%R"
+format = '\[[ $time]($style)\] '
+
+[directory]
+truncation_length = 20
+truncate_to_repo = false
+style = "cyan bold"
+format = "[:$path]($style)[$read_only]($read_only_style) "
+
+[memory_usage]
+format = ' \[[$symbol$ram | $ram_pct]($style)\]'
+style = 'bold yellow'
+symbol = "󰍛 "
+threshold = 1
+disabled = false
+
+[python]
+format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+symbol = " "
+
+[docker_context]
+format = '\[[$symbol$context]($style)\]'
+symbol = " "
+
+[git_branch]
+format = ' \[[$symbol$branch]($style)\]'
+symbol = " "
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
+
+[java]
+format = '\[[$symbol($version)]($style)\]'
+symbol = " "
+
+[sudo]
+format = '\[[as $symbol]($style)\]'
+
+[username]
+format = '\[[$user]($style)\]'
